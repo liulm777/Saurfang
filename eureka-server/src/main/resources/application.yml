@@ -1,0 +1,17 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: eureka
+
+eureka:
+  server:
+    enable-self-preservation: false # 关闭保护机制
+  client:
+    fetch-registry: false #不检索服务
+    registerWithEureka: false #不注册自己
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  instance:
+    hostname: 192.168.11.20
