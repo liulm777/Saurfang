@@ -26,6 +26,7 @@ public class MyApplicationEnvironmentPreparedEventListener implements
                 PropertySource<?> ps = iter.next();
                 System.out.println(ps.getName());
                 System.out.println(ps.getSource());
+                System.out.println();
             }
         }
     }
