@@ -11,3 +11,5 @@ eureka:
       #enabled: true # 健康检查
     serviceUrl:
       defaultZone: http://192.168.11.20:9000/eureka/
+
+dynamicInfo: 111
